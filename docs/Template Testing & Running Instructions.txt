@@ -1,0 +1,4 @@
+1. Navigate to the folder containing the project/template, whose path is %GOPATH%\src\project-or-template-name
+2. Make sure the .go file to run the project/template exists in this folder (not in any subfolders), then run the .go file by entering the command: go run filename.go
+3. Wait for about 90 seconds, if there is no error output, then the webserver has been started. Go to http://hostname:8000 to test the project/template
+4. To stop the webserver, in the MinGW Command Prompt window, press Ctrl-C and wait for the webserver to exit (an exit status code will appear before the webserver is terminated)

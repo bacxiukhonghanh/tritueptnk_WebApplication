@@ -1,0 +1,9 @@
+1. Install Golang
+2. Extract the content of echo-2.zip into %GOROOT%\src\github.com\labstack\ and rename the folder from echo-2 to echo
+3. Run sysdm.cpl (System properties), under the Advanced tab, choose Environment Variables
+4. In the System Variables, create a new environment variable named GOPATH, whose value is the path to the directory that will be used to contain the projects/templates. NOTE: the path to the folder of the project/template will be %GOPATH%\src\project-or-template-name
+5. Close the System properties window
+6. Install TDM-GCC-64
+7. Launch the MinGW Command Prompt (by searching in the Start Menu - Windows 7 or later). This will start a DOS prompt with the correct environment for using MinGW with GCC
+8. Within this DOS prompt window, navigate to the GOPATH, for example: cd %GOPATH%
+9. Enter the command: go get -u github.com/mattn/go-sqlite3. Then enter the command: go install github.com/mattn/go-sqlite3. If the commands finish without any error output, then go-sqlite3 is successfully installed and ready for use
